@@ -1,1 +1,70 @@
 /* You can add global styles to this file, and also import other style files */
+html,
+body,
+header,
+.view {
+  height: 100vh;
+}
+.view img, .view video {
+    display: initial !important;
+}
+@media (max-width: 740px) {
+  html,
+  body,
+  header,
+  .view {
+    height: 100vh;
+  }
+}
+.logo {
+    width: 150px;
+}
+
+.top-nav-collapse {
+  background-color: #000000 !important
+}
+
+.navbar:not(.top-nav-collapse) {
+  /* background: transparent !important; */
+}
+
+@media (max-width: 991px) {
+  .navbar:not(.top-nav-collapse) {
+    background: #000000 !important
+  }
+}
+@media (min-width: 600px){
+.navbar.scrolling-navbar.top-nav-collapse {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}}
+
+@media (min-width: 600px){
+.navbar.scrolling-navbar {
+    -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+    -o-transition: background .5s ease-in-out,padding .5s ease-in-out;
+    transition: background .5s ease-in-out,padding .5s ease-in-out;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}}
+
+h1 {
+  letter-spacing: 8px;
+}
+
+h5 {
+  letter-spacing: 3px;
+}
+
+.hr-light {
+  border-top: 3px solid #fff;
+  width: 80px;
+}
+
+/* new top header */
+
+#header_1 .header-nav{float: left; margin: -21px 0px 0px -83px}
+#header_1 .header-nav ul .lis{display: inline-block !important;}
+.announce .fa-bullhorn{top: 3px;position: absolute;}
+#header_1 .header-nav .topnav{right: 129px !important;top: 0px;position: absolute;}
+.uv-ul{padding: 0px !important}
