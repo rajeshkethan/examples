@@ -15,11 +15,15 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { LoginComponent } from './login/login.component';
 import { ModalContentComponent, NgbdModalComponent } from './modals/modal.component';
+import { ElemandTempComponent } from './example/elem.component';
+import { ExampleComponent,  } from './example/example.component';
+import { AnotherComponent } from './example/another.component';
 
 @NgModule({
   declarations: [
     AppComponent, ViewComponent, CarouselComponent, HomeComponent, BehaviorviewComponent, ModalContentComponent,
      BehavoirsubComponent, HeaderComponent, FooterComponent, LoginComponent, NgbdModalComponent,
+     ElemandTempComponent, ExampleComponent, AnotherComponent
   ],
   imports: [
     BrowserModule, RoutingModule, NgbModalModule,
@@ -27,6 +31,7 @@ import { ModalContentComponent, NgbdModalComponent } from './modals/modal.compon
   ],
   providers: [],
   bootstrap: [AppComponent],
-  entryComponents: [ModalContentComponent]
+  entryComponents: [ModalContentComponent,],
+
 })
 export class AppModule { }

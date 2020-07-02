@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="row py-5">
+    <div class="col-md-12">
+      <h3 class="text-center py-4 text-danger">
+        This is for the example of Elemetref and Templateref
+      </h3>
+      <span #tref>I am span</span><br />
+      <span>I am first span</span><br />
+      <ng-container #vc></ng-container><br />
+      <ng-container [ngTemplateOutlet]="tpl"></ng-container><br />
+      <!-- <ng-container *ngComponentOutlet="ColorComponent"></ng-container><br /> -->
+      <span>I am last span</span><br />
+      <ng-template #tpl>
+        <span>I am span in template</span>
+      </ng-template>
+      <br />
+      <ng-container #template>
+        this is my template
+      </ng-container>
+    </div>
+  </div>
+</div>
